@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="HeatmapApp">
+<head>
+<meta charset="UTF-8">
+	<link href="css/bootstrap-3.3.4-dist/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="bower_components/cal-heatmap/cal-heatmap.css">
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/d3/d3.js"></script>
+<script type="text/javascript" src="bower_components/cal-heatmap/cal-heatmap.js"></script>
+<script type="text/javascript" src="bower_components/angular-cal-heatmap-directive/dist/1.3.0/calHeatmap.min.js"></script>
+<script src="js/controllers.js"></script>
+</head>
+
+<body ng-controller="HeatmapCtrl">
+<div class="container-fluid">
+	
+	<div class="row>">
+		<div class="col-sm-12">
+			<h2>AngularJS Cal HeatMap simple example</h2>
+                        <ul>
+                            <li><a target="_blank" href="http://kamisama.github.io/cal-heatmap/#home">
+                                    http://kamisama.github.io/cal-heatmap/#home</a></li>
+                            <li><a target="_blank" href="https://github.com/shekhargulati/angular-cal-heatmap-directive">
+                                    https://github.com/shekhargulati/angular-cal-heatmap-directive</a</li>
+                            
+                        </ul>
+		</div>
+	</div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <cal-heatmap config="heatmap.config"></cal-heatmap>
+        </div>
+        
+    </div>
+	
+</div>
+</body>
+</html>
