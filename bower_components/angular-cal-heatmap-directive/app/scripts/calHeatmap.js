@@ -17,7 +17,10 @@ angular.module('calHeatmap',[])
                 range: !config ? 3 : config.range ? config.range : 3,
                 domainGutter: !config ? 10 : config.domainGutter ? config.domainGutter : 10,
                 legend: !config ? [2,4,6,8,10] : config.legend ? config.legend : [2, 4, 6, 8, 10],
-                itemName: !config ? 'item' : config.itemName ? config.itemName : 'item'
+                itemName: !config ? 'item' : config.itemName ? config.itemName : 'item',
+                //kh added
+                previousSelector: !config ? '#heatmap.previous' : config.previousSelector ? config.previousSelector : "#heatmap.previous",
+                nextSelector: !config ? '#heatmap.next' : config.nextSelector ? config.nextSelector : "#heatmap.next",
               });
           }
 

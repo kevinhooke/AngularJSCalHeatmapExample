@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="HeatmapApp">
+    <head>
+        <meta charset="UTF-8">
+        <link href="css/bootstrap-3.3.4-dist/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="bower_components/cal-heatmap/cal-heatmap.css">
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="bower_components/d3/d3.js"></script>
+        <script type="text/javascript" src="bower_components/cal-heatmap/cal-heatmap.js"></script>
+        <script src="js/controllers_calheatmap.js"></script>
+    </head>
+
+    <body ng-controller="HeatmapCtrl">
+        <div class="container-fluid">
+
+            <div class="row>">
+                <div class="col-sm-12">
+                    <h2>Cal-HeatMap simple example</h2>
+                    <ul>
+                        <li><a target="_blank" href="http://kamisama.github.io/cal-heatmap/#home">
+                                http://kamisama.github.io/cal-heatmap/#home</a></li>
+                        <li><a target="_blank" href="https://github.com/shekhargulati/angular-cal-heatmap-directive">
+                                https://github.com/shekhargulati/angular-cal-heatmap-directive</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+
+                        <li><a href="index_calheatmap.html">Simple example using cal-heapmap directly</a></li>
+                        <li><a href="index_angular_calheatmap.html">Example using the AngularJS Cal-Heatmap directive</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="cal-heatmap-previous"><< Earlier</button>
+                    <button id="cal-heatmap-next">Later >></button>
+                </div>
+
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="cal-heatmap"></div>
+                </div>
+
+            </div>  
+            
+            <div class="row">
+                <form>
+                    <div class="col-md-3">                
+                        <p>Month<input type="radio" ng-change="heatmapRefresh()" ng-model="search.heatmap.config.domain" value="month"/>
+                    </div>
+                    <div class="col-md-3">                
+                        <p>Week<input type="radio" ng-change="heatmapRefresh()" ng-model="search.heatmap.config.domain" value="week"/>
+                    </div>
+                    <div class="col-md-3">                
+                        <p>Day<input type="radio" ng-change="heatmapRefresh()" ng-model="search.heatmap.config.domain" value="day"/>
+                    </div>
+                    <div class="col-md-3">                
+                        <p>Hour<input type="radio" ng-change="heatmapRefresh()" ng-model="search.heatmap.config.domain" value="hour"/>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </body>
+</html>
